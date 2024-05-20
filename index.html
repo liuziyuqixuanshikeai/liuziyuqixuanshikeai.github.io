@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--搜索引擎优化 分享到社交媒体后有简述；添加了背景颜色和阴影；添加了响应式设计-->
+    <meta name="description" content="这是一个关于 Python 学习的个人主页">
+    <title>Python 学习主页</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f8f8f8;
+            color: #333;
+            font-size: 18px;
+        }
+        .container {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header, footer {
+            text-align: center;
+        }
+        h1 {
+            font-weight: bold;
+            color: #000;
+            font-size: 48px;
+        }
+        h2 {
+            color: #000;
+            font-size: 34px;
+        }
+        a {
+            color: #007BFF;
+            font-size: 18px;
+            text-decoration: underline;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 4px 0;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        p {
+            font-size: 18px;
+        }
+            /* 响应式设计 屏幕宽度≤768px是平板电脑 ≤480px是手机 */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 10px;
+            }
+            h1 {
+                font-size: 32px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            a {
+                font-size: 16px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                margin: 5px;
+                padding: 5px;
+            }
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+            a {
+                font-size: 14px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <h1>欢迎来到我的 Python 学习主页</h1>
+    </header>
+    
+    <section id="content" class="container">
+        <h2>Python 主要内容</h2>
+        <p>Python 是一种广泛使用的高级编程语言，它强调代码的可读性和简洁性，使程序员能够用更少的代码行数表达想法。</p>
+    </section>
+    
+    <section id="links" class="container">
+        <h2>Python 有用链接</h2>
+        <ul>
+            <li><a href="https://www.python.org/">Python 官网</a></li>
+            <li><a href="https://docs.python.org/3/">Python 文档</a></li>
+            <li><a href="https://www.realpython.com/">Real Python</a></li>
+        </ul>
+    </section>
+    
+    <section id="common-mistakes" class="container">
+        <h2>Python 判断题（未完）</h2>
+        <p>6+66+666+6666+66666：F  （int‘a’不对）</p>
+        <p>（c=int(‘a’,b)不对）</p>
+        <p>（输入是10.0，int(input())，int处理不了浮点数，故不对）</p>
+        <p>这是字符串输出格式--123，--表示空格  {:5s}：F</p>
+        <p>这是字符串输出格式--123，--表示空格  {:5d}：T</p>
+        <p>（bool(False)返回值就是False，故返回True不对）</p>
+        <p>（bool([])，bool(None)返回值都是False，所以bool题返回值都是False）</p>
+        <p>（bin(12.5)不对，bin只能处理整数）</p>
+        <p>（3 and 0 and “hello”的值是0不是False！）</p>
+        <p>z已赋值，x=(y=z+1)是错误语句：T</p>
+    </section>
+    
+    <section id="framework" class="container">
+        <h2>Python 思维导图</h2>
+        <img src="mindmap.jpg" alt="Python 思维导图" width="400" height="300">
+    </section>
+    
+    <footer class="container">
+        <p>制作人：刘子煜、戚煊、史可爱 | 联系方式: 电子邮箱3230102222@zju.edu.cn | 手机（微信同）: 13389981676</p>
+    </footer>
+</body>
+</html>
